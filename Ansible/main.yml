@@ -1,0 +1,13 @@
+---
+- name: Kubernates Installation
+  hosts: Master
+  become: yes
+  roles:
+    - Docker
+    - Kubernates
+- name: Kubernetes node installation
+  hosts: appec2
+  become: yes
+  roles:
+    - Docker
+    - Kubernetes-node

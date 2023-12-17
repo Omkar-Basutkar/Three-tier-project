@@ -1,0 +1,9 @@
+---
+# handlers file for kubernetes-node
+
+ handlers:
+    - name: docker status
+      service: name=docker state=started
+
+
+
